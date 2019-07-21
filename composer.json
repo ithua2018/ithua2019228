@@ -1,25 +1,34 @@
 {
-	"name": "ithuatools/mailerqueue",
-	"type": "yii2-extension",
-	"description": "The Async mailer for the Yii framework",
-	"keywords": ["yii2", "redis", "async", "mailer"],
-	"license": "MIT",
-	"support": {
-		"issues": "https://github.com/ithua2018/ithua2019228/issues",
+    // package name
+    "name": "ithuatools/mailerqueue",
+    // package type
+    "type": "yii2-extension",
+
+    "description": "The Async mailer for the Yii framework",
+    "keywords": ["yii2", "redis", "async", "mailer"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/ithua2018/ithua2019228/issues",
 		"forum": " ",
 		"source": "https://github.com/ithua2018/ithua2019228"
-	},
-	"authors": [{
-		"name": "ithua",
-		"email": "673509045@qq.com"
-	}],
-	"require": {
-		"yiisoft/yii2": "*",
-		"yiisoft/yii2-redis": "~2.0.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"ithuatools\\queuemailer\\": "src/"
-		}
-	}
+    },
+    "authors": [
+        {
+           "name": "ithua",
+		   "email": "673509045@qq.com"
+        }
+    ],
+
+    // package dependencies
+    "require": {
+       "yiisoft/yii2": "*",
+	   "yiisoft/yii2-redis": "~2.0.0"
+    },
+
+    // class autoloading specs
+    "autoload": {
+        "psr-4": {
+           "ithuatools\\queuemailer\\": "src/"
+        }
+    }
 }
